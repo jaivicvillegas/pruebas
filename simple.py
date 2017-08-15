@@ -6,16 +6,16 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 # The command_executor tells the test to run on Sauce, while the desired_capabilities
 # parameter tells us which browsers and OS to spin up.
 desired_cap = {
-    'platform': "Mac OS X 10.9",
+    'platform': "Windows 10",
     'browserName': "chrome",
-    'version': "31",
+    'version': "59",
 }
 driver = webdriver.Remote(
    command_executor='http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub',
    desired_capabilities=desired_cap)
  
 # This is your test logic. You can add multiple tests here.
-driver.implicitly_wait(10)
+driver.implicitly_wait(100)
 driver.get("https://www.esika.com/pe/")
 if not "Home" in driver.title:
     raise Exception("Unable to load Home page!")
