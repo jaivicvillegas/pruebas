@@ -22,7 +22,4 @@ if not "Home" in driver.title:
 elem = driver.find_element_by_name("text")
 elem.send_keys("corrector")
 elem.submit()
- 
-# This is where you tell Sauce Labs to stop running tests on your behalf.
-# It's important so that you aren't billed after your test finishes.
 driver.quit()
