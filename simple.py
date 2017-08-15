@@ -16,11 +16,11 @@ driver = webdriver.Remote(
  
 # This is your test logic. You can add multiple tests here.
 driver.implicitly_wait(10)
-driver.get("http://www.google.com")
-if not "Google" in driver.title:
-    raise Exception("Unable to load google page!")
-elem = driver.find_element_by_name("q")
-elem.send_keys("Sauce Labs")
+driver.get("https://www.esika.com/pe/")
+if not "Home" in driver.title:
+    raise Exception("Unable to load Home page!")
+elem = driver.find_element_by_name("text")
+elem.send_keys("corrector")
 elem.submit()
  
 # This is where you tell Sauce Labs to stop running tests on your behalf.
