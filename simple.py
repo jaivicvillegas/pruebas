@@ -1,25 +1,31 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
- 
-# This is the only code you need to edit in your existing scripts.
-# The command_executor tells the test to run on Sauce, while the desired_capabilities
-# parameter tells us which browsers and OS to spin up.
-desired_cap = {
-    'platform': "Windows 10",
-    'browserName': "chrome",
-    'version': "59",
-}
-driver = webdriver.Remote(
-   command_executor='http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub',
-   desired_capabilities=desired_cap)
- 
-# This is your test logic. You can add multiple tests here.
-driver.implicitly_wait(100)
-driver.get("https://www.esika.com/pe/")
-if not "Home" in driver.title:
-    raise Exception("Unable to load Home page!")
-elem = driver.find_element_by_name("text")
-elem.send_keys("corrector")
-elem.submit()
-driver.quit()
+import pytest
+
+
+@pytest.mark.usefixtures('driver')
+class TestGuineaPig(object):
+
+    def test_link(self, driver):
+        """
+        Verify page title change when link clicked
+        :return: None
+        """
+        driver.get('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
+        driver.find_element_by_id("i_am_a_link").click()
+
+        title = "I am another page title - Sauce Labs"
+        assert title == driver.title
+
+    def test_comment(self, driver):
+        """
+        Verify comment submission
+        :return: None
+        """
+        driver.get('https://saucelabs-sample-test-frameworks.github.io/training-test-page')
+        sample_text = "hede@hodo.com"
+        email_text_field = driver.find_element_by_id("comments")
+        email_text_field.send_keys(sample_text)
+
+        driver.find_element_by_id("submit").click()
+
+        text = driver.find_element_by_id("your_comments").text
+        assert sample_text in text  
