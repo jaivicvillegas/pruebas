@@ -24,7 +24,7 @@ namespace ejemploSelenium
             capability.SetCapability("version", "58");
             capability.SetCapability("username", "claudiamarquez");
             capability.SetCapability("accessKey", "03e669cf-8fe4-46b7-a1ac-59a63b96420a");
-
+            capability.SetCapability("build", System.Environment.GetEnvironmentVariable("JOB_NAME") + "__" + System.Environment.GetEnvironmentVariable("BUILD_NUMBER"));
             var driver = new RemoteWebDriver(
                new Uri("http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub"), capability);                     
             driver.Navigate().GoToUrl("https://www.esika.com/pe/");
