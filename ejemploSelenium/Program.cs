@@ -22,14 +22,19 @@ namespace ejemploSelenium
             capability.SetCapability("platform", "WIN7");
             capability.SetCapability("browserName", "chrome");
             capability.SetCapability("version", "58");
+            capability.SetCapability("username", "claudiamarquez");
+            capability.SetCapability("accessKey", "03e669cf-8fe4-46b7-a1ac-59a63b96420a");
+
             var driver = new RemoteWebDriver(
                new Uri("http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub"), capability);                     
             driver.Navigate().GoToUrl("https://www.esika.com/pe/");
-            IWebElement elem = driver.FindElementByName("text");
-            elem.SendKeys("corrector");
-            elem.SendKeys(" 1");
-            elem.Submit();   
+           
             driver.Quit();
+            //IWebElement elem = driver.FindElementByName("text");
+            //elem.SendKeys("corrector");
+            //elem.SendKeys(" 1");
+            //elem.Submit();   
+
         }
     }
 }

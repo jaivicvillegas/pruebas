@@ -14,3 +14,11 @@ C:\xampp\htdocs\pruebasjenkins\ejemploSelenium\bin\Debug\ejemploSelenium.exe
 C:\xampp\htdocs\pruebasjenkins\ejemploSelenium\bin\Debug\ejemploSelenium.pdb
 C:\xampp\htdocs\pruebasjenkins\ejemploSelenium\bin\Debug\WebDriver.dll
 C:\xampp\htdocs\pruebasjenkins\ejemploSelenium\bin\Debug\WebDriver.xml
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\bin\Debug\ejemploSelenium.exe.config
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\bin\Debug\ejemploSelenium.exe
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\bin\Debug\ejemploSelenium.pdb
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\bin\Debug\WebDriver.dll
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\bin\Debug\WebDriver.xml
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\obj\Debug\ejemploSelenium.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\obj\Debug\ejemploSelenium.exe
+C:\xampp\htdocs\pruebasjenkins\ejemplos\ejemploSelenium\obj\Debug\ejemploSelenium.pdb
