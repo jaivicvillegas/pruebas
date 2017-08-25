@@ -17,8 +17,7 @@ namespace ejemploSelenium
         {
 
             DesiredCapabilities capability = DesiredCapabilities.Chrome();
-            capability.SetCapability("username", "claudiamarquez");
-            capability.SetCapability("accessKey", "03e669cf-8fe4-46b7-a1ac-59a63b96420a");
+            
             capability.SetCapability("version", "latest-1");
             capability.SetCapability("platform", "WIN7");
             capability.SetCapability("browserName", "chrome");
@@ -28,6 +27,7 @@ namespace ejemploSelenium
             driver.Navigate().GoToUrl("https://www.esika.com/pe/");
             IWebElement elem = driver.FindElementByName("text");
             elem.SendKeys("corrector");
+            elem.SendKeys(" 1");
             elem.Submit();   
             driver.Quit();
         }
