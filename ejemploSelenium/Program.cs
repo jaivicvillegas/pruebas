@@ -13,8 +13,8 @@ namespace ejemploSelenium
     {
         private ICapabilities capabilities;
 
-      
 
+        [Test]
         static void Main(string[] args)
         {
             DesiredCapabilities capability = DesiredCapabilities.Chrome();
@@ -24,7 +24,7 @@ namespace ejemploSelenium
             capability.SetCapability("platform", "WIN7");
             capability.SetCapability("browserName", "chrome");
             capability.SetCapability("version", "58");
-            var driver = new RemoteWebDriver(new Uri("https://ondemand.saucelabs.com:443/wd/hub"), capability);
+            var driver = new RemoteWebDriver(new Uri("http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub"), capability);
 
                       //element.SendKeys("");
             driver.Navigate().GoToUrl("https://www.esika.com/pe/");
