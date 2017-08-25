@@ -14,7 +14,7 @@ namespace ejemploSelenium
         private ICapabilities capabilities;
 
 
-        [Test]
+      
         static void Main(string[] args)
         {
             DesiredCapabilities capability = DesiredCapabilities.Chrome();
