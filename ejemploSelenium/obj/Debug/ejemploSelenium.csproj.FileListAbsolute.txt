@@ -1,0 +1,8 @@
+C:\sel\ejemploSelenium\ejemploSelenium\bin\Debug\ejemploSelenium.exe.config
+C:\sel\ejemploSelenium\ejemploSelenium\bin\Debug\ejemploSelenium.exe
+C:\sel\ejemploSelenium\ejemploSelenium\bin\Debug\ejemploSelenium.pdb
+C:\sel\ejemploSelenium\ejemploSelenium\bin\Debug\WebDriver.dll
+C:\sel\ejemploSelenium\ejemploSelenium\bin\Debug\WebDriver.xml
+C:\sel\ejemploSelenium\ejemploSelenium\obj\Debug\ejemploSelenium.csprojResolveAssemblyReference.cache
+C:\sel\ejemploSelenium\ejemploSelenium\obj\Debug\ejemploSelenium.exe
+C:\sel\ejemploSelenium\ejemploSelenium\obj\Debug\ejemploSelenium.pdb
