@@ -12,11 +12,10 @@ namespace ejemploSelenium
     class Program
     {
         private ICapabilities capabilities;
-
-
       
         static void Main(string[] args)
         {
+
             DesiredCapabilities capability = DesiredCapabilities.Chrome();
             capability.SetCapability("username", "claudiamarquez");
             capability.SetCapability("accessKey", "03e669cf-8fe4-46b7-a1ac-59a63b96420a");
@@ -25,11 +24,8 @@ namespace ejemploSelenium
             capability.SetCapability("browserName", "chrome");
             capability.SetCapability("version", "58");
             var driver = new RemoteWebDriver(
-               new Uri("http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub"), capability);
-
-                      //element.SendKeys("");
+               new Uri("http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub"), capability);                     
             driver.Navigate().GoToUrl("https://www.esika.com/pe/");
-
             IWebElement elem = driver.FindElementByName("text");
             elem.SendKeys("corrector");
             elem.Submit();   
