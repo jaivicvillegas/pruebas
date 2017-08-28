@@ -34,6 +34,7 @@ namespace ParallelSelenium
             this.os = os;
             this.deviceName = deviceName;
             this.deviceOrientation = deviceOrientation;
+          //  443
         }
         //static void Main() {
         //    ParallelSearchTests ini = new ParallelSearchTests("chrome", "38", "Windows 7","","");
@@ -75,7 +76,7 @@ namespace ParallelSelenium
             } else {
                 seleniumUri = "https://ondemand.saucelabs.com:443/wd/hub";
             }
-           // seleniumUri = "http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:80/wd/hub";
+           // seleniumUri = "http://claudiamarquez:03e669cf-8fe4-46b7-a1ac-59a63b96420a@ondemand.saucelabs.com:443/wd/hub";
             capabilities.SetCapability("username", Constants.sauceUser);
             capabilities.SetCapability("accessKey", Constants.sauceKey);
             capabilities.SetCapability("name",
