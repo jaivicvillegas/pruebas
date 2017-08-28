@@ -36,12 +36,13 @@ namespace ParallelSelenium
             this.deviceOrientation = deviceOrientation;
           //  443
         }
-        //static void Main() {
-        //    ParallelSearchTests ini = new ParallelSearchTests("chrome", "38", "Windows 7","","");
-        //    ini.Init();
-        //    ini.BingSearchHello();
-        //    ini.Cleanup();
-        //}
+        static void Main()
+        {
+            ParallelSearchTests ini = new ParallelSearchTests("chrome", "38", "Windows 7", "", "");
+            ini.Init();
+            ini.BingSearchHello();
+            ini.Cleanup();
+        }
         [SetUp]
         public void Init()
         {
